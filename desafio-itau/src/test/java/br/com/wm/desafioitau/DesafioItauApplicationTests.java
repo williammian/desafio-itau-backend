@@ -1,4 +1,4 @@
-package br.com.wm.desafio_itau;
+package br.com.wm.desafioitau;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
