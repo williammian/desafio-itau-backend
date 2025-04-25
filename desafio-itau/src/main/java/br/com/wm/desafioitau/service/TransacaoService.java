@@ -8,12 +8,13 @@ import org.springframework.stereotype.Service;
 
 import br.com.wm.desafioitau.exception.ValidacaoException;
 import br.com.wm.desafioitau.model.Transacao;
+import jakarta.validation.Valid;
 
 @Service
 public class TransacaoService {
 	private final List<Transacao> transacoes = new CopyOnWriteArrayList<>();
 	
-	public void adicionar(Transacao transacao) {
+	public void adicionar(@Valid Transacao transacao) {
 		if(transacao.getDataHora().isAfter(OffsetDateTime.now())) {
 			throw new ValidacaoException("Transação não deve acontecer no futuro.");
 		}

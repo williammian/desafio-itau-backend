@@ -1,3 +1,19 @@
 Desafio Itaú Backend
 
 https://github.com/rafaellins-itau/desafio-itau-vaga-99-junior
+
+----------------------
+
+Gerar documentação da API - Swagger UI
+
+localhost:8080/swagger-ui/index.html
+
+----------------------
+
+Observabilidade
+
+GET http://localhost:8080/actuator/health
+
+GET http://localhost:8080/actuator/prometheus
+
+----------------------
