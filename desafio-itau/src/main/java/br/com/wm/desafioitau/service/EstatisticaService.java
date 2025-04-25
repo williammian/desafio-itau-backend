@@ -8,14 +8,17 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import br.com.wm.desafioitau.dto.EstatisticaDTO;
-import br.com.wm.desafioitau.exception.GlobalExceptionHandler;
 import br.com.wm.desafioitau.model.Transacao;
 
 @Service
 public class EstatisticaService {
+	
+	@Value("${app.estatistica.segundos}")
+	private int segundos = 60;
 	
 	private static final Logger logger = LoggerFactory.getLogger(EstatisticaService.class);
 	
@@ -26,7 +29,7 @@ public class EstatisticaService {
 		long inicio = System.nanoTime(); // Início da medição
 		
 		OffsetDateTime agora = OffsetDateTime.now();
-        OffsetDateTime limite = agora.minusSeconds(60);
+        OffsetDateTime limite = agora.minusSeconds(segundos);
         
         List<Transacao> transacoes = transacaoService.listarTodas().stream()
         		.filter(t -> t.getDataHora().isAfter(limite))
