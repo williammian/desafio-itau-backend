@@ -125,7 +125,7 @@ Os testes cobrem cenários de:
 
 A documentação está disponível via SpringDoc OpenAPI:
 
-- `GET /swagger-ui.html` → UI Swagger
+- `GET /swagger-ui/index.html` → UI Swagger
 - `GET /v3/api-docs` → JSON OpenAPI 3
 
 ---
