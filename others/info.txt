@@ -17,3 +17,23 @@ GET http://localhost:8080/actuator/health
 GET http://localhost:8080/actuator/prometheus
 
 ----------------------
+
+Docker
+
+Gerando .jar
+
+mvn clean package -DskipTests
+
+Construindo imagem (a partir do Dockerfile criado)
+
+docker build -t williammian:desafio-itau-backend .
+
+Rodando o container
+
+docker run -p 8080:8080 williammian:desafio-itau-backend
+
+Subindo o container a partir do docker-compose.yml
+
+docker-compose up --build
+
+------------------------
