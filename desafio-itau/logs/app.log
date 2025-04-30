@@ -1,334 +1,95 @@
-2025-04-25T14:18:10.920-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplicationTests      : Starting DesafioItauApplicationTests using Java 17.0.3.1 with PID 5316 (started by User in C:\Fontes\FontesSTS\desafio-itau-backend\desafio-itau)
-2025-04-25T14:18:10.922-03:00 DEBUG 5316 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplicationTests      : Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-25T14:18:10.923-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2025-04-25T14:18:13.425-03:00  INFO 5316 --- [desafio-itau] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
-2025-04-25T14:18:13.499-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplicationTests      : Started DesafioItauApplicationTests in 3.123 seconds (process running for 4.286)
-2025-04-25T14:18:14.673-03:00  INFO 5316 --- [desafio-itau] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.wm.desafioitau.service.EstatisticaServiceTest]: EstatisticaServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-04-25T14:18:14.686-03:00  INFO 5316 --- [desafio-itau] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.wm.desafioitau.DesafioItauApplication for test class br.com.wm.desafioitau.service.EstatisticaServiceTest
-2025-04-25T14:18:14.880-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 5288 µs
-2025-04-25T14:18:14.920-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 222 µs
-2025-04-25T14:18:14.939-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 3192 µs
-2025-04-25T14:18:14.958-03:00  INFO 5316 --- [desafio-itau] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.wm.desafioitau.service.TransacaoServiceTest]: TransacaoServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-04-25T14:18:14.964-03:00  INFO 5316 --- [desafio-itau] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.wm.desafioitau.DesafioItauApplication for test class br.com.wm.desafioitau.service.TransacaoServiceTest
-2025-04-25T14:18:15.242-03:00  INFO 5316 --- [desafio-itau] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.wm.desafioitau.DesafioItauApplication for test class br.com.wm.desafioitau.controller.TransacaoControllerTest
-2025-04-25T14:18:15.247-03:00  INFO 5316 --- [desafio-itau] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
-2025-04-25T14:18:15.296-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.c.TransacaoControllerTest        : Starting TransacaoControllerTest using Java 17.0.3.1 with PID 5316 (started by User in C:\Fontes\FontesSTS\desafio-itau-backend\desafio-itau)
-2025-04-25T14:18:15.297-03:00 DEBUG 5316 --- [desafio-itau] [main] b.c.w.d.c.TransacaoControllerTest        : Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-25T14:18:15.297-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.c.TransacaoControllerTest        : No active profile set, falling back to 1 default profile: "default"
-2025-04-25T14:18:15.658-03:00  INFO 5316 --- [desafio-itau] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-04-25T14:18:15.659-03:00  INFO 5316 --- [desafio-itau] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-04-25T14:18:15.661-03:00  INFO 5316 --- [desafio-itau] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
-2025-04-25T14:18:15.681-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.c.TransacaoControllerTest        : Started TransacaoControllerTest in 0.434 seconds (process running for 6.468)
-2025-04-25T14:18:15.927-03:00 ERROR 5316 --- [desafio-itau] [main] b.c.w.d.e.GlobalExceptionHandler         : Bad request: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> br.com.wm.desafioitau.controller.TransacaoController.adicionarTransacao(br.com.wm.desafioitau.dto.TransacaoDTO)
-
-org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> br.com.wm.desafioitau.controller.TransacaoController.adicionarTransacao(br.com.wm.desafioitau.dto.TransacaoDTO)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:179) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.5.jar:6.2.5]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
-	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.5.jar:6.2.5]
-	at br.com.wm.desafioitau.controller.TransacaoControllerTest.deveRetornar400ParaTransacaoSemCorpo(TransacaoControllerTest.java:76) ~[test-classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.4.jar:1.11.4]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
-
-2025-04-25T14:18:15.981-03:00  INFO 5316 --- [desafio-itau] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.wm.desafioitau.DesafioItauApplication for test class br.com.wm.desafioitau.controller.EstatisticaControllerTest
-2025-04-25T14:18:15.986-03:00  INFO 5316 --- [desafio-itau] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
-2025-04-25T14:18:16.018-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.c.EstatisticaControllerTest      : Starting EstatisticaControllerTest using Java 17.0.3.1 with PID 5316 (started by User in C:\Fontes\FontesSTS\desafio-itau-backend\desafio-itau)
-2025-04-25T14:18:16.018-03:00 DEBUG 5316 --- [desafio-itau] [main] b.c.w.d.c.EstatisticaControllerTest      : Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-25T14:18:16.018-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.c.EstatisticaControllerTest      : No active profile set, falling back to 1 default profile: "default"
-2025-04-25T14:18:16.304-03:00  INFO 5316 --- [desafio-itau] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-04-25T14:18:16.304-03:00  INFO 5316 --- [desafio-itau] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-04-25T14:18:16.305-03:00  INFO 5316 --- [desafio-itau] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2025-04-25T14:18:16.312-03:00  INFO 5316 --- [desafio-itau] [main] b.c.w.d.c.EstatisticaControllerTest      : Started EstatisticaControllerTest in 0.326 seconds (process running for 7.099)
-2025-04-25T14:18:16.325-03:00 ERROR 5316 --- [desafio-itau] [main] b.c.w.d.e.GlobalExceptionHandler         : Resource not found: No static resource estatisticas.
-
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource estatisticas.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.39.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.2.5.jar:6.2.5]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
-	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.2.5.jar:6.2.5]
-	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.2.5.jar:6.2.5]
-	at br.com.wm.desafioitau.controller.EstatisticaControllerTest.deveRetornar404ParaCaminhoInvalido(EstatisticaControllerTest.java:60) ~[test-classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.4.jar:1.11.4]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
-	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
-
-2025-04-25T17:34:53.186Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Starting DesafioItauApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
-2025-04-25T17:34:53.190Z DEBUG 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-25T17:34:53.192Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-04-25T17:34:54.761Z  INFO 1 --- [desafio-itau] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-25T17:34:54.773Z  INFO 1 --- [desafio-itau] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-25T17:34:54.774Z  INFO 1 --- [desafio-itau] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-25T17:34:54.804Z  INFO 1 --- [desafio-itau] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-25T17:34:54.805Z  INFO 1 --- [desafio-itau] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1549 ms
-2025-04-25T17:34:55.830Z  INFO 1 --- [desafio-itau] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
-2025-04-25T17:34:55.921Z  INFO 1 --- [desafio-itau] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-25T17:34:55.941Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Started DesafioItauApplication in 3.495 seconds (process running for 4.019)
-2025-04-25T17:35:02.750Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-25T17:35:02.751Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-25T17:35:02.754Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-04-25T17:35:03.358Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 394 ms
-2025-04-25T17:35:37.597Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 2031 µs
-2025-04-25T17:35:44.845Z  INFO 1 --- [desafio-itau] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-25T17:35:44.859Z  INFO 1 --- [desafio-itau] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-25T17:37:46.137Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Starting DesafioItauApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
-2025-04-25T17:37:46.141Z DEBUG 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-25T17:37:46.143Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-04-25T17:37:47.793Z  INFO 1 --- [desafio-itau] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-25T17:37:47.810Z  INFO 1 --- [desafio-itau] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-25T17:37:47.811Z  INFO 1 --- [desafio-itau] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-25T17:37:47.852Z  INFO 1 --- [desafio-itau] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-25T17:37:47.854Z  INFO 1 --- [desafio-itau] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1649 ms
-2025-04-25T17:37:48.828Z  INFO 1 --- [desafio-itau] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
-2025-04-25T17:37:48.909Z  INFO 1 --- [desafio-itau] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-25T17:37:48.935Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Started DesafioItauApplication in 3.517 seconds (process running for 4.037)
-2025-04-25T17:37:55.683Z  INFO 1 --- [desafio-itau] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-25T17:37:55.694Z  INFO 1 --- [desafio-itau] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-25T17:39:19.285Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Starting DesafioItauApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
-2025-04-25T17:39:19.290Z DEBUG 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-25T17:39:19.292Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-04-25T17:39:20.843Z  INFO 1 --- [desafio-itau] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-25T17:39:20.855Z  INFO 1 --- [desafio-itau] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-25T17:39:20.856Z  INFO 1 --- [desafio-itau] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-25T17:39:20.888Z  INFO 1 --- [desafio-itau] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-25T17:39:20.889Z  INFO 1 --- [desafio-itau] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1544 ms
-2025-04-25T17:39:21.971Z  INFO 1 --- [desafio-itau] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
-2025-04-25T17:39:22.058Z  INFO 1 --- [desafio-itau] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-25T17:39:22.078Z  INFO 1 --- [desafio-itau] [main] b.c.w.d.DesafioItauApplication           : Started DesafioItauApplication in 3.483 seconds (process running for 3.987)
-2025-04-25T17:39:31.208Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-25T17:39:31.209Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-25T17:39:31.212Z  INFO 1 --- [desafio-itau] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-04-25T17:39:31.490Z ERROR 1 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.e.GlobalExceptionHandler         : Resource not found: No static resource favicon.ico.
-
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar!/:6.2.5]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar!/:6.2.5]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar!/:na]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-
-2025-04-25T17:41:28.036Z  INFO 1 --- [desafio-itau] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-25T17:41:28.048Z  INFO 1 --- [desafio-itau] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-30T16:19:44.752-03:00  INFO 11888 --- [desafio-itau] [restartedMain] b.c.w.d.DesafioItauApplication           : Starting DesafioItauApplication using Java 17.0.3.1 with PID 11888 (C:\Fontes\FontesSTS\desafio-itau-backend\desafio-itau\target\classes started by User in C:\Fontes\FontesSTS\desafio-itau-backend\desafio-itau)
+2025-04-30T16:19:44.761-03:00 DEBUG 11888 --- [desafio-itau] [restartedMain] b.c.w.d.DesafioItauApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-30T16:19:44.763-03:00  INFO 11888 --- [desafio-itau] [restartedMain] b.c.w.d.DesafioItauApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-04-30T16:19:44.841-03:00  INFO 11888 --- [desafio-itau] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-30T16:19:44.841-03:00  INFO 11888 --- [desafio-itau] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-30T16:19:46.825-03:00  INFO 11888 --- [desafio-itau] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-30T16:19:46.842-03:00  INFO 11888 --- [desafio-itau] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-30T16:19:46.842-03:00  INFO 11888 --- [desafio-itau] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-30T16:19:46.911-03:00  INFO 11888 --- [desafio-itau] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-30T16:19:46.911-03:00  INFO 11888 --- [desafio-itau] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2025-04-30T16:19:47.912-03:00  INFO 11888 --- [desafio-itau] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-30T16:19:47.923-03:00  INFO 11888 --- [desafio-itau] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2025-04-30T16:19:48.010-03:00  INFO 11888 --- [desafio-itau] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-30T16:19:48.031-03:00  INFO 11888 --- [desafio-itau] [restartedMain] b.c.w.d.DesafioItauApplication           : Started DesafioItauApplication in 3.917 seconds (process running for 4.409)
+2025-04-30T16:30:58.898-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-30T16:30:58.900-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-30T16:30:58.902-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-30T16:30:59.060-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 916 µs
+2025-04-30T16:30:59.221-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 63 µs
+2025-04-30T16:31:17.010-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 79 µs
+2025-04-30T16:31:17.020-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 128 µs
+2025-04-30T16:32:09.915-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-6] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 133 µs
+2025-04-30T16:32:09.923-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 50 µs
+2025-04-30T16:32:15.156-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 316 µs
+2025-04-30T16:32:15.164-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-9] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 63 µs
+2025-04-30T16:32:22.067-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-10] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 85 µs
+2025-04-30T16:32:22.075-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-10] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 89 µs
+2025-04-30T16:33:04.863-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 78 µs
+2025-04-30T16:33:04.869-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 76 µs
+2025-04-30T16:33:20.355-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 85 µs
+2025-04-30T16:33:20.366-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 79 µs
+2025-04-30T16:33:41.166-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 111 µs
+2025-04-30T16:33:41.175-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 121 µs
+2025-04-30T16:33:57.438-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-9] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 107 µs
+2025-04-30T16:33:57.446-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 56 µs
+2025-04-30T16:34:14.272-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-10] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 122 µs
+2025-04-30T16:34:14.278-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 76 µs
+2025-04-30T16:34:16.517-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 164 µs
+2025-04-30T16:34:16.525-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 92 µs
+2025-04-30T16:35:23.583-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-6] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 109 µs
+2025-04-30T16:35:23.590-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 59 µs
+2025-04-30T16:35:26.641-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 105 µs
+2025-04-30T16:35:26.648-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-9] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 89 µs
+2025-04-30T16:35:32.158-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 79 µs
+2025-04-30T16:35:32.166-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-10] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 115 µs
+2025-04-30T16:35:36.010-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 103 µs
+2025-04-30T16:35:36.018-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 122 µs
+2025-04-30T16:35:45.303-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 75 µs
+2025-04-30T16:35:45.309-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 150 µs
+2025-04-30T16:35:56.895-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-6] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 122 µs
+2025-04-30T16:35:56.902-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 213 µs
+2025-04-30T16:36:02.008-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 107 µs
+2025-04-30T16:36:02.014-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-9] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 100 µs
+2025-04-30T16:36:48.815-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 111 µs
+2025-04-30T16:36:48.821-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-10] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 95 µs
+2025-04-30T16:36:51.321-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 380 µs
+2025-04-30T16:36:51.326-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 70 µs
+2025-04-30T16:37:27.483-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 87 µs
+2025-04-30T16:37:27.490-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 121 µs
+2025-04-30T16:37:31.140-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-6] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 78 µs
+2025-04-30T16:37:31.146-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 72 µs
+2025-04-30T16:37:47.252-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 73 µs
+2025-04-30T16:37:47.260-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 398 µs
+2025-04-30T16:38:01.221-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 108 µs
+2025-04-30T16:38:01.226-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-10] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 95 µs
+2025-04-30T16:38:37.871-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 66 µs
+2025-04-30T16:38:37.876-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 66 µs
+2025-04-30T16:39:22.919-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 112 µs
+2025-04-30T16:39:22.929-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-6] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 145 µs
+2025-04-30T16:39:29.155-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 65 µs
+2025-04-30T16:39:29.161-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-9] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 68 µs
+2025-04-30T16:41:28.686-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-10] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 97 µs
+2025-04-30T16:41:28.695-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 72 µs
+2025-04-30T16:42:16.911-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 122 µs
+2025-04-30T16:42:16.921-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 375 µs
+2025-04-30T16:42:21.348-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 93 µs
+2025-04-30T16:42:21.357-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-6] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 82 µs
+2025-04-30T16:42:30.460-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 8534 µs
+2025-04-30T16:42:30.471-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 121 µs
+2025-04-30T16:42:49.368-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 113 µs
+2025-04-30T16:42:49.380-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 141 µs
+2025-04-30T16:42:54.871-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 289 µs
+2025-04-30T16:42:54.883-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 133 µs
+2025-04-30T16:43:02.628-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-6] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 273 µs
+2025-04-30T16:43:02.634-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 141 µs
+2025-04-30T16:44:44.164-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 143 µs
+2025-04-30T16:44:44.171-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 92 µs
+2025-04-30T16:44:58.736-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-3] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 148 µs
+2025-04-30T16:44:58.742-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-2] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 188 µs
+2025-04-30T16:45:10.334-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-4] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 180 µs
+2025-04-30T16:45:10.339-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-5] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 105 µs
+2025-04-30T17:03:47.551-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-7] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 212 µs
+2025-04-30T17:03:47.560-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-9] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 79 µs
+2025-04-30T17:04:02.696-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-1] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 85 µs
+2025-04-30T17:04:02.709-03:00  INFO 11888 --- [desafio-itau] [http-nio-8080-exec-8] b.c.w.d.service.EstatisticaService       : Tempo de execução (Estatística): 86 µs
