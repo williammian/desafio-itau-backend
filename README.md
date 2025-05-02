@@ -144,6 +144,13 @@ A interface foi criada com React, utilizando Axios para chamadas HTTP e React-Bo
 - Visualização de estatísticas em tempo real
 - Integração com a API Java
 
+Como executar:
+```bash
+cd front
+npm install
+npm start
+```
+
 ## 🧹 Tecnologias utilizadas
 
 - Java 17
