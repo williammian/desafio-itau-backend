@@ -136,6 +136,14 @@ A aplicação realiza log de tempo de execução do cálculo de estatísticas, a
 
 ---
 
+## 🖥️ Interface Web (Frontend React)
+
+A interface foi criada com React, utilizando Axios para chamadas HTTP e React-Bootstrap para componentes visuais.
+
+- Formulário para envio de transações
+- Visualização de estatísticas em tempo real
+- Integração com a API Java
+
 ## 🧹 Tecnologias utilizadas
 
 - Java 17
@@ -146,6 +154,7 @@ A aplicação realiza log de tempo de execução do cálculo de estatísticas, a
 - JUnit 5
 - Docker / Docker Compose
 - Maven
+- React 18, React-Bootstrap, Axios
 
 ---
 
