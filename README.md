@@ -150,6 +150,9 @@ cd front
 npm install
 npm start
 ```
+A aplicação estará disponível em: http://localhost:3000
+
+Certifique-se de que o backend esteja rodando em http://localhost:8080
 
 ## 🧹 Tecnologias utilizadas
 
